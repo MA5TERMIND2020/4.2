@@ -1,0 +1,29 @@
+<!--
+    Author: Stephen Hammonds
+-->
+
+<!DOCTYPE html> <!--This tells the browser that this is an HTML file-->
+<html lang="en"> <!--This tag encases the entire HTML document and provides metadata about the language it is written in-->
+<head> <!--This tag contains more metadata about the document like the character encoding used and the Title of the page-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="strings.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>Pailndrome Checker v1.0</title>
+</head>
+<body> <!--The Body is the area where all of the content we write will be displayed in the users browser window for them to see-->
+    <h1 id="result">Welcome to Palindrome Checker v1.0</h1> <!--This displays the desired heading at the top of the web page-->
+    
+    <form id="formSubmit" onsubmit="return false">
+        Enter a Word or Phrase <input type="text" id="first" />
+        <input type="submit" onclick="check()" />
+    </form>
+        
+    <audio controls loop>
+            <source src="./Sounds/Soundtrack.mp3" type="audio/mpeg"></source>
+    </audio>
+    
+    <h2>Palindrome ~ a word, phrase, or sequence that reads the same backward as forward, e.g., madam or nurses run.</h2>
+
+</body>
+</html>

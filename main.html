@@ -1,0 +1,30 @@
+<!--
+    Author: Stephen Hammonds
+-->
+
+<!DOCTYPE html> <!--This tells the browser that this is an HTML file-->
+<html lang="en"> <!--This tag encases the entire HTML document and provides metadata about the language it is written in-->
+<head> <!--This tag contains more metadata about the document like the character encoding used and the Title of the page-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>Welcome</title>
+</head>
+<body> <!--The Body is the area where all of the content we write will be displayed in the users browser window for them to see-->
+    <h1>Please Log In</h1> <!--This displays the desired heading at the top of the web page-->
+
+    <!--The Form element is where we create a form to get user input with which we can later perform operations on such as input validation-->
+    <form id="formSubmit" onsubmit="return false">
+    First Name <input type="text" id="first" />
+    Last Name <input type="text" id="last" />
+    Passcode <input type="number" id="code" />
+    <input type="submit" onclick="check()" />
+    </form>
+
+    <div id="rslt"> </div>
+
+    <a id="lnk" href="./strings.html"></a>
+    
+</body>
+</html>
