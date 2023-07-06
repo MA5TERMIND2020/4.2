@@ -36,6 +36,7 @@ function check() { //The check function is ran after the user clicks the submit 
     function validCode() {
         if (code.length == 5) {
             playAccessGranted();
+            document.getElementById('success').innerHTML = "Log In Successful"
             document.getElementById('rslt').innerHTML = "Congratulations!!! You may now continue to the Palindrome Checker App by clicking the link below."
             document.getElementById('lnk').innerHTML = "CLICK HERE TO LAUNCH PALINDROME CHECKER v1.0" 
         }
